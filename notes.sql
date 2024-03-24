@@ -20,3 +20,17 @@ FROM customers;
 
 SELECT name, unit_price, unit_price * 1.1 AS 'new price'
 FROM products;
+
+
+--- Create and drop database and tables
+CREATE DATABASE test;
+DROP DATABASE test;
+
+CREATE DATABASE record_company;
+USE record_company;
+CREATE TABLE test(
+	test_column INT
+);
+ALTER TABLE test
+ADD another_column VARCHAR(255);
+DROP TABLE test;
