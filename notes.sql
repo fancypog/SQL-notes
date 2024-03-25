@@ -23,6 +23,7 @@ FROM products;
 
 
 --- Create and drop database and tables
+--- Varchar is like string in SQL
 CREATE DATABASE test;
 DROP DATABASE test;
 
