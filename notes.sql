@@ -35,3 +35,18 @@ CREATE TABLE test(
 ALTER TABLE test
 ADD another_column VARCHAR(255);
 DROP TABLE test;
+
+
+--- Example: a record company
+
+CREATE DATABASE record_company;
+USE record_company;
+
+--- NOT NULL means it always have a name defined when you insert a band
+--- use an id to identify that one row even if it shares the same name as the other
+--- id to identify individual records
+CREATE TABLE bands (
+	id INT NOT NULL AUTO_INCREMENT, 
+	name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
