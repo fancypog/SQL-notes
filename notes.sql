@@ -60,3 +60,13 @@ CREATE TABLE albums (
     PRIMARY KEY (id),
     FOREIGN KEY (band_id) REFERENCES bands(id)
 );
+
+
+INSERT INTO bands (name)
+VALUES ('Iron Maiden');
+
+INSERT INTO bands (name)
+VALUES ('Deuce'), ('Avenged Sevenfold'), ('Ankor');
+
+SELECT * FROM bands;
+
